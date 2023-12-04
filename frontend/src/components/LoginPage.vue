@@ -1,5 +1,6 @@
 <template>
   <div class="offset-white">
+  <AppSidebar/>
     <div class="row justify-content-center">
       <h2>
         <strong>Wonder Wake Administration</strong>
@@ -84,7 +85,10 @@
 </template>
 
 <script>
+import AppSidebar from './body/AppSidebar.vue';
+
 export default {
+  components: { AppSidebar },
   data() {
     return {
       email: "",
