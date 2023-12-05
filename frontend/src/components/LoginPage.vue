@@ -89,10 +89,10 @@
 </template>
 
 <script>
-import AppSidebar from './body/AppSidebar.vue';
+
 
 export default {
-  components: { AppSidebar },
+
   data() {
     return {
       email: "",
@@ -108,6 +108,7 @@ export default {
         this.error = "";
         console.log("Email:", this.email);
         console.log("Password:", this.password);
+        this.$push({name:"Sidebar"})
       }
     },
   },
